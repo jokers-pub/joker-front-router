@@ -260,7 +260,7 @@ export class WebHistory implements IRouteHistory {
             return stripBase(pathFromHash, "");
         }
 
-        return stripBase(pathname, this.base) + search;
+        return stripBase(pathname, this.base) + search + hash;
     }
 
     private normalizeBase() {
